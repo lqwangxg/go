@@ -4,7 +4,7 @@ import (
 "net/http"
 "github.com/labstack/echo"
 "github.com/labstack/echo/middleware"
-"./controllers"
+"github.com/lqwangxg/go/controllers"
 )
 
 func main() {
