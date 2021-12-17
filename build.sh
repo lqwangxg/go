@@ -14,4 +14,3 @@ gofmt -w src
 export GOPATH="$OLD_GO_PATH"
 export GOBIN="$OLD_GO_BIN"
 
-
