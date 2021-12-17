@@ -9,7 +9,7 @@ export GOBIN="$CURRENT_DIR/bin"
 
 gofmt -w src
 
-go install test_hello
+#go install test_hello
 
 export GOPATH="$OLD_GO_PATH"
 export GOBIN="$OLD_GO_BIN"
