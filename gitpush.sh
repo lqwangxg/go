@@ -10,7 +10,7 @@ fi
 git add . 
 git commit -a -m "$commitmsg"
 
-if [ -z $commitmsg ]; then
+if [ -z $branchname ]; then
     echo "dest branch is empty."
 else
   curbranch=`git branch | grep -oe "$branchname" `
