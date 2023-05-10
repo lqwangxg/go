@@ -1,3 +1,3 @@
-module example/hello/v2
+module github.com/lqwangxg/go/v1
 
-go 1.13
+go 1.17
