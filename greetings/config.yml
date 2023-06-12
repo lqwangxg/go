@@ -1,0 +1,18 @@
+root:
+  gua:
+  - index: 1
+    name: 乾
+    image: 天
+    family: 父
+    position: 西北
+  - index: 2
+    name: 
+    image: 兑
+    family: 泽
+    position: 
+    
+    status: true
+    
+   [乾,兑,离,震,巽,坎,艮,坤]
+  - imageName: [天,泽,火,雷,风,水,山,地]
+  
