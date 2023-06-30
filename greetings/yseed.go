@@ -11,11 +11,12 @@ func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
-func RandomYSeed() string {
+func RandomYSeed(t int, b int, y int) string {
 	imageName := []string { "天","泽","火","雷","风","水","山","地" }
-	top := rand.Intn(100) % 8 
-	bom := rand.Intn(200) % 8 
-	yao := rand.Intn(300) % 6
+	
+	top := mod(t,8)		
+	bom := mod(b,8)		
+	yao := mod(y,6)		
 	topname :=  imageName[top]
 	bomname :=  imageName[bom]
 	
@@ -24,4 +25,16 @@ func RandomYSeed() string {
 	//re := regexp.MustCompile(`\d{4}-\d{2}-\d{2} (\d{2}):\d{2}:\d{2}`)
 	
 	return fmt.Sprintf("origin(上：%d %s, 下：%d %s, 爻：%d).", top+1,topname, bom+1,bomname, yao+1)
+}
+func mod(x int, m int) int {
+	if(x<=0){
+		x = rand.Intn(1000) 
+	}
+	for {
+		if (x > m){
+			x %= m
+		}else{
+			return x
+		}
+	}
 }
